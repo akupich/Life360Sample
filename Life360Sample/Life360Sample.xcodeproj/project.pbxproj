@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32EDBFF127294C3E002CB406 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 32EDBFF027294C3D002CB406 /* README.md */; };
+		32F199772727380E00F06897 /* Life360SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F199762727380E00F06897 /* Life360SampleApp.swift */; };
+		32F199792727380E00F06897 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F199782727380E00F06897 /* ContentView.swift */; };
+		32F1997B2727381200F06897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F1997A2727381200F06897 /* Assets.xcassets */; };
+		32F1997E2727381200F06897 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F1997D2727381200F06897 /* Preview Assets.xcassets */; };
+		32F199A32727385400F06897 /* CircleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F199A22727385400F06897 /* CircleManager.swift */; };
+		32F199A72727389000F06897 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F199A52727389000F06897 /* Member.swift */; };
+		32F199A82727389000F06897 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F199A62727389000F06897 /* Circle.swift */; };
+		32F199AB27277B6800F06897 /* CircleManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F199AA27277B6800F06897 /* CircleManagerImpl.swift */; };
+		32F199AD27277BF500F06897 /* CircleManagerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F199AC27277BF500F06897 /* CircleManagerHelpers.swift */; };
+		32F199AF27277ED300F06897 /* CircleManagerImpl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F199AE27277ED300F06897 /* CircleManagerImpl+Helpers.swift */; };
+		32F199B2272883C700F06897 /* CircleManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F199B1272883C700F06897 /* CircleManagerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32F199852727381200F06897 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32F1996B2727380D00F06897 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32F199722727380D00F06897;
+			remoteInfo = Life360Sample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32EDBFF027294C3D002CB406 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		32F199732727380E00F06897 /* Life360Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Life360Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F199762727380E00F06897 /* Life360SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Life360SampleApp.swift; sourceTree = "<group>"; };
+		32F199782727380E00F06897 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		32F1997A2727381200F06897 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32F1997D2727381200F06897 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		32F1997F2727381200F06897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F199842727381200F06897 /* Life360SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Life360SampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F1998A2727381200F06897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F199A22727385400F06897 /* CircleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleManager.swift; sourceTree = "<group>"; };
+		32F199A52727389000F06897 /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		32F199A62727389000F06897 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		32F199AA27277B6800F06897 /* CircleManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleManagerImpl.swift; sourceTree = "<group>"; };
+		32F199AC27277BF500F06897 /* CircleManagerHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleManagerHelpers.swift; sourceTree = "<group>"; };
+		32F199AE27277ED300F06897 /* CircleManagerImpl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CircleManagerImpl+Helpers.swift"; sourceTree = "<group>"; };
+		32F199B1272883C700F06897 /* CircleManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleManagerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32F199702727380D00F06897 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F199812727381200F06897 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32F1996A2727380D00F06897 = {
+			isa = PBXGroup;
+			children = (
+				32EDBFF027294C3D002CB406 /* README.md */,
+				32F199752727380E00F06897 /* Life360Sample */,
+				32F199A9272750C100F06897 /* Supporting Files */,
+				32F199872727381200F06897 /* Life360SampleTests */,
+				32F199742727380E00F06897 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32F199742727380E00F06897 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32F199732727380E00F06897 /* Life360Sample.app */,
+				32F199842727381200F06897 /* Life360SampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32F199752727380E00F06897 /* Life360Sample */ = {
+			isa = PBXGroup;
+			children = (
+				32F199762727380E00F06897 /* Life360SampleApp.swift */,
+				32F199A12727383E00F06897 /* CircleManagment */,
+				32F199782727380E00F06897 /* ContentView.swift */,
+			);
+			path = Life360Sample;
+			sourceTree = "<group>";
+		};
+		32F1997C2727381200F06897 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				32F1997D2727381200F06897 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		32F199872727381200F06897 /* Life360SampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				32F199B1272883C700F06897 /* CircleManagerTests.swift */,
+				32F1998A2727381200F06897 /* Info.plist */,
+			);
+			path = Life360SampleTests;
+			sourceTree = "<group>";
+		};
+		32F199A12727383E00F06897 /* CircleManagment */ = {
+			isa = PBXGroup;
+			children = (
+				32F199B0272784B800F06897 /* Interface */,
+				32F199AA27277B6800F06897 /* CircleManagerImpl.swift */,
+				32F199AE27277ED300F06897 /* CircleManagerImpl+Helpers.swift */,
+				32F199A42727387A00F06897 /* Model */,
+			);
+			path = CircleManagment;
+			sourceTree = "<group>";
+		};
+		32F199A42727387A00F06897 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32F199A62727389000F06897 /* Circle.swift */,
+				32F199A52727389000F06897 /* Member.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32F199A9272750C100F06897 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32F1997C2727381200F06897 /* Preview Content */,
+				32F1997A2727381200F06897 /* Assets.xcassets */,
+				32F1997F2727381200F06897 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32F199B0272784B800F06897 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				32F199A22727385400F06897 /* CircleManager.swift */,
+				32F199AC27277BF500F06897 /* CircleManagerHelpers.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32F199722727380D00F06897 /* Life360Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32F199982727381200F06897 /* Build configuration list for PBXNativeTarget "Life360Sample" */;
+			buildPhases = (
+				32F1996F2727380D00F06897 /* Sources */,
+				32F199702727380D00F06897 /* Frameworks */,
+				32F199712727380D00F06897 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Life360Sample;
+			productName = Life360Sample;
+			productReference = 32F199732727380E00F06897 /* Life360Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32F199832727381200F06897 /* Life360SampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32F1999B2727381200F06897 /* Build configuration list for PBXNativeTarget "Life360SampleTests" */;
+			buildPhases = (
+				32F199802727381200F06897 /* Sources */,
+				32F199812727381200F06897 /* Frameworks */,
+				32F199822727381200F06897 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32F199862727381200F06897 /* PBXTargetDependency */,
+			);
+			name = Life360SampleTests;
+			productName = Life360SampleTests;
+			productReference = 32F199842727381200F06897 /* Life360SampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32F1996B2727380D00F06897 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					32F199722727380D00F06897 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					32F199832727381200F06897 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 32F199722727380D00F06897;
+					};
+				};
+			};
+			buildConfigurationList = 32F1996E2727380D00F06897 /* Build configuration list for PBXProject "Life360Sample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32F1996A2727380D00F06897;
+			productRefGroup = 32F199742727380E00F06897 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32F199722727380D00F06897 /* Life360Sample */,
+				32F199832727381200F06897 /* Life360SampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32F199712727380D00F06897 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32EDBFF127294C3E002CB406 /* README.md in Resources */,
+				32F1997E2727381200F06897 /* Preview Assets.xcassets in Resources */,
+				32F1997B2727381200F06897 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F199822727381200F06897 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32F1996F2727380D00F06897 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F199A82727389000F06897 /* Circle.swift in Sources */,
+				32F199AF27277ED300F06897 /* CircleManagerImpl+Helpers.swift in Sources */,
+				32F199AD27277BF500F06897 /* CircleManagerHelpers.swift in Sources */,
+				32F199A32727385400F06897 /* CircleManager.swift in Sources */,
+				32F199792727380E00F06897 /* ContentView.swift in Sources */,
+				32F199772727380E00F06897 /* Life360SampleApp.swift in Sources */,
+				32F199A72727389000F06897 /* Member.swift in Sources */,
+				32F199AB27277B6800F06897 /* CircleManagerImpl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F199802727381200F06897 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F199B2272883C700F06897 /* CircleManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32F199862727381200F06897 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32F199722727380D00F06897 /* Life360Sample */;
+			targetProxy = 32F199852727381200F06897 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		32F199962727381200F06897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32F199972727381200F06897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32F199992727381200F06897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Supporting Files/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.Life360Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32F1999A2727381200F06897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Supporting Files/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.Life360Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		32F1999C2727381200F06897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Life360SampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.Life360SampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Life360Sample.app/Life360Sample";
+			};
+			name = Debug;
+		};
+		32F1999D2727381200F06897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Life360SampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.Life360SampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Life360Sample.app/Life360Sample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32F1996E2727380D00F06897 /* Build configuration list for PBXProject "Life360Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F199962727381200F06897 /* Debug */,
+				32F199972727381200F06897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32F199982727381200F06897 /* Build configuration list for PBXNativeTarget "Life360Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F199992727381200F06897 /* Debug */,
+				32F1999A2727381200F06897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32F1999B2727381200F06897 /* Build configuration list for PBXNativeTarget "Life360SampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F1999C2727381200F06897 /* Debug */,
+				32F1999D2727381200F06897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32F1996B2727380D00F06897 /* Project object */;
+}
